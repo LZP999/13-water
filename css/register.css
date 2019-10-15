@@ -1,0 +1,140 @@
+.main{
+    color:blue;
+    font-family:KaiTi;
+    font-size: 35px;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 15px;
+}
+.main1{
+    color:red;
+    font-family:KaiTi;
+    font-size: 35px;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 15px;
+}
+body{
+    background-image: url(../photo/bg4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.register{
+    position: absolute;
+    right: 1%;
+    top: 20%;
+    margin:0 auto;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border:rgb(240, 240, 151) 4px solid;
+    border-radius: 20px;
+}
+.register1{
+    width: 100%;
+    height: 15%;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.register2{
+    width: 100%;
+    height: 85%;
+    float:left;
+}
+.register11{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: gray;
+    opacity: 0.5;
+}
+.register12{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: gray;
+    opacity: 0.3;
+}
+.register21{
+    position: relative;
+    width:100%;
+    height: 12%;
+    margin:10% 20% 0;
+}
+.register22{
+    position: relative;
+    width:100%;
+    height: 12%;
+    margin:10% 20% 0;
+}
+.register23{
+    position: relative;
+    width:100%;
+    height: 12%;
+    margin:10% 20% 0;
+}
+.register24{
+    position: relative;
+    width:100%;
+    height: 15%;
+    margin:10% 20% 0;
+}
+.register25{
+    position: relative;
+    width:100%;
+    height: 15%;
+    margin:6% 25% 0;
+}
+
+.input21{
+    margin: auto;
+    width:60%;
+    height: 100%;
+    border:0;
+    border-radius: 20px;
+    padding:5px;
+    font-size:18px;
+    background-color: gray;
+    opacity: 0.7;
+}
+.input22{
+    margin: auto;
+    width:60%;
+    height: 100%;
+    border:0;
+    padding:5px;
+    border-radius: 20px;
+    font-size:18px;
+    background-color: gray;
+    opacity: 0.7;
+}
+.input23{
+    margin: auto;
+    width:60%;
+    height: 100%;
+    border:0;
+    padding:5px;
+    border-radius: 20px;
+    font-size:18px;
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.button21{
+    margin: auto;
+    width:60%;
+    height: 100%;
+    padding:5px;
+    border-radius: 20px;
+    font-size:20px;
+    background-color: #FFE4B5;
+    border-color: yellow;
+    color:#ffffff;
+}

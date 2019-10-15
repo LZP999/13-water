@@ -1,0 +1,298 @@
+.main{
+    color:blue;
+    font-family:KaiTi;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 20px;
+}
+.main1{
+    color:red;
+    font-family:KaiTi;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 30px;
+}
+.main2{
+    color:blue;
+    font-family:KaiTi;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+input::-webkit-input-placeholder{
+    color:blue;
+    font-family:KaiTi;
+    font-size: 30px;
+}
+body,.found{
+    position: absolute;
+    background-image: url(../photo/bg.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.found0{
+    top: 0%;
+    margin:0 auto;
+    width: 100%;
+    height: 11%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    opacity: 0.7;
+}
+.found01{
+    width: 6%;
+    height: 100%;
+}
+.found02{
+    width: 25%;
+    height: 100%;
+    background-color: azure;
+    opacity: 0.3;
+}
+.found03{
+    width: 45%;
+    height: 100%;
+    background-color: azure;
+    opacity: 0.5;
+}
+.found04{
+    width: 23%;
+    height: 100%;
+    background-color: azure;
+    opacity: 0.3;
+}
+.found1{
+    width: 50%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 25%;
+    background-color: azure;
+    opacity: 0.3;
+}
+.found11{
+    margin: 0 auto;
+    margin-top:0%;
+    width:100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+}
+.found12{
+    position: relative;
+    margin: 0 auto;
+    margin-top:8%;
+    width:100%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+}
+.found121{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0%;
+    width:100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+}
+.found1211{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0%;
+    width:20%;
+    height:100%;
+}
+.found1212{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0%;
+    width:40%;
+    height:100%;
+}
+#input1{
+    margin-top: 15px;
+    width: 50%;
+    height: 60%;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+    border: 0;
+}
+#input2{
+    margin-top: 15px;
+    width: 50%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input11{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input12{
+    margin-top: 15px;
+    width: 55%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 20px;
+}
+#input13{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input14{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input21{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input22{
+    margin-top: 15px;
+    width: 55%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 20px;
+}
+#input23{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input24{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input31{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input32{
+    margin-top: 15px;
+    width: 55%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 20px;
+}
+#input33{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input34{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input01{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input02{
+    margin-top: 15px;
+    width: 55%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 20px;
+}
+#input03{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+#input04{
+    margin-top: 15px;
+    width: 14%;
+    height: 60%;
+    border: 0;
+    color: red;
+    font-family: KaiTi;
+    font-size: 25px;
+}
+.button01{
+    background-image: url(../photo/back.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-repeat: no-repeat;
+}
+li.a{
+    color:green;
+    list-style-type: disc;
+    color:green;
+    font-family:KaiTi;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+}

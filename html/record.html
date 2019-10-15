@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>历史战绩</title>
+    <link rel="stylesheet" href="../css/record.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/record.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="record">
+        <div class="record0">
+            <div class="record01">
+                <input type="button" class="button01" onclick="window.location.href='result.html'">
+            </div>
+            <div class="record02"><p class="main"><b>历史战绩</b></p></div>
+            <div class="record03"><p class="main1"><b>福建十三水</b></p></div>
+            <div class="record04">
+                <li class="a"><b>游戏在线</b></li>
+            </div>
+        </div>
+    <form role="form" id="record-form" method="GET">
+        <div id="record1">
+            <div class="record11">
+                <input type="text" class="input11" name="id" required placeholder="玩家id:">
+            </div>
+            <div class="record12">
+                <input type="text" class="input12" name="limit" required placeholder="每页条数:">
+            </div>
+            <div class="record13">
+                <input type="text" class="input13" name="page" required placeholder="页码:">
+            </div>
+            <div class="record2">
+                <input type="button" value="查询历史战绩" class="button21" onclick="Found()">
+            </div>
+        </div>
+    </form>
+    <div id="record3" style="display: none">
+            <table id="table1" style="border-spacing:0">
+                <tr>
+                    <th>战局ID：</th>
+                    <th>前墩：</th>
+                    <th>中墩：</th>
+                    <th>后墩：</th>
+                    <th>玩家积分：</th>
+                    <th>结算时间：</th>
+                </tr>
+                <tr>
+                    <td id="td01"></td>
+                    <td id="td02"></td>
+                    <td id="td03"></td>
+                    <td id="td04"></td>
+                    <td id="td05"></td>
+                    <td id="td06"></td>
+                </tr>
+                <tr>
+                    <td id="td11"></td>
+                    <td id="td12"></td>
+                    <td id="td13"></td>
+                    <td id="td14"></td>
+                    <td id="td15"></td>
+                    <td id="td16"></td>
+                </tr>
+                <tr>
+                    <td id="td21"></td>
+                    <td id="td22"></td>
+                    <td id="td23"></td>
+                    <td id="td24"></td>
+                    <td id="td25"></td>
+                    <td id="td26"></td>
+                </tr>
+                <tr>
+                    <td id="td31"></td>
+                    <td id="td32"></td>
+                    <td id="td33"></td>
+                    <td id="td34"></td>
+                    <td id="td35"></td>
+                    <td id="td36"></td>
+                </tr>
+            </table>
+            <div id="pagination">
+                <button id="prev">《</button>
+                <span id="pages"></span>
+                <button id="next">》</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <div class="record1">
+                <div class="record10">
+                    <input type="button" onclick="record()" value="刷新战绩" class="button10">
+                </div>
+                <div class="record11">
+                    <div class="record111"><b>ID</b></div>
+                    <div class="record112"><b>出牌情况</b></div>
+                    <div class="record113"><b>分数</b></div>
+                    <div class="record114"><b>结算时间</b></div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="record2">
+                <ul>
+                        <li class="page_li">
+                            <button class="page_btn" style="width:100px" id="prePage">上一页</button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn1">1</button>
+                        </li>
+                        <li class="page_li">
+                            <span class="pages_span" id="prePoint">...</span>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn2"></button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn3"></button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn4"></button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn5"></button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn6"></button>
+                        </li>
+                        <li class="page_li">
+                            <span class="pages_span" id="sufPoint">...</span>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" id="page_btn7"></button>
+                        </li>
+                        <li class="page_li">
+                            <button class="page_btn" style="width:100px" id="sufPage">下一页</button>
+                        </li>
+                    </ul>
+            </div> -->
