@@ -102,3 +102,38 @@ function register(){
         }
     });
 }
+
+//注册加绑定的数据传输
+function register(){
+    var register_data=($('#register2-form').serializeJson());
+    if(register_data.username==""||register_data.username=="请输入账号"){
+        alert("账号不得为空!");
+        return;
+    }else if(register_data.password==""||register_data.password=="请输入密码"){
+        alert("密码不得为空！");
+        return;
+    }else if(register_data.student_number==""||register_data.student_number=="请输入学号"){
+        alert("学号不得为空！");
+        return;
+    }else if(register_data.student_password==""||register_data.student_password=="请输入教务处密码"){
+        alert("教务处密码不得为空！");
+        return;
+    }
+    $.ajax({
+        type:"post",
+        url: "https://api.shisanshui.rtxux.xyz/auth/register2",
+        dataType:"json",
+        data:JSON.stringify(register_data),
+        contentType: "application/json;charset-UTF-8",
+        success:function(result){
+            console.log(result);//打印服务端返回的数据
+            if(result.status==0){
+                alert("注册并绑定成功");
+                window.location.href="./login.html";
+            }
+        },
+        error:function(res){
+            alert("注册失败！")
+        }
+    });
+}
