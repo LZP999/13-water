@@ -25,6 +25,7 @@
 //开始游戏
 var dun= new Array();
 var game_id="";
+var num=0;
 function battle(){
     $.ajax({
         type:"POST",
@@ -40,7 +41,8 @@ function battle(){
             game_id=result.data.id;
             dun=changeData1(main(pai));
             localStorage.setItem('dun',dun);//将user_id的值存入本地缓存中
-            alert('开启战局');
+            // alert('开启战局');
+            Found();
         },
         error:function(res){
             alert("战局开启失败！");
@@ -67,8 +69,10 @@ function Found(){
         success:function(result){
             console.log(result);//打印服务端返回的数据
             if(result.status==0){
-                alert("开始游戏");
-                window.location.href="./battle2.html";
+                // alert("开始游戏");
+                num++;
+                if(num==50)window.location.href="./battle.html";
+                else battle();
             }
         },
         error:function(res){
@@ -471,6 +475,11 @@ function getHulu(cards){
             result.push(_temp[i]);
         }
     }
+    var result1=[]
+    for(var i=result.length-1;i>=0;i--)
+     {
+            result1.push(result[i]);
+        }
     return result;
 }
 
@@ -627,6 +636,23 @@ function sortCards(cards){
     for(var i = 51 ;i>=0 ;i--){
         if(allSort[i]){
             result.push( 51 - i );
+        }
+    }
+    return result;
+}
+
+function sortCardsmax(cards){
+    var result = [];
+    // 鸽巢法
+    var allSort = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    // 每个位置 i 代表的牌数为 (51 - i)
+    for(var i = 0 ;i<cards.length ;i++){
+        allSort[51-cards[i]] = 1;
+    }
+
+    for(var i = 0 ;i<52 ;i++){
+        if(allSort[i]){
+            result.push(51-i);
         }
     }
     return result;
@@ -812,5 +838,47 @@ function main(a)
     for(var i=0;i<a.length;i++){
         dun[0].push(a[i]);
     }
+    x1=two(dun[2]);
+    x2=two(dun[1]);
+    x3=dun[2];
+    x4=dun[1];
+    if(x1<x2){
+        var t1=dun[1];
+        dun[1]=dun[2];
+        dun[2]=t1;
+    }
+    if(x1==5 || x1==4 || x1==8){
+        x3=sortCardsmax(dun[2]);
+        x4=sortCardsmax(dun[1]);
+        if(x1==x2){
+            for(var i=0;i < 5;i++)
+            {
+                if(Math.floor(x3[i]/4)>Math.floor(x4[i]/4)){
+                    i=5;
+                    break;
+                }
+                if(Math.floor(x3[i]/4)<Math.floor(x4[i]/4)){
+                    var t=dun[1];
+                    dun[1]=dun[2];
+                    dun[2]=t;
+                    i=5;
+                    break;
+                }
+            }   
+            }
+    }
+    else{
+        if(x1==x2){
+                if(Math.floor(x3[0]/4)<Math.floor(x4[0]/4)){
+                    var t=dun[1];
+                    dun[1]=dun[2];
+                    dun[2]=t;
+                }
+            }
+                
+            
+    }
+    
+    
     return dun;
 }
